@@ -16,4 +16,4 @@ A simple and responsive shopping cart page built with **React.js** and **Tailwin
 - ✅ Built with React JS
 - ✅ Styled using Tailwind CSS
 - ✅ Custom font and color palette
-- ✅ Clean, modern UI
+- ✅ Clean and simple UI

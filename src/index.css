@@ -20,11 +20,6 @@
   border-radius: 0.6rem;
 }
 
-@utility is-active {
-  background-color: var(--color-custom-maroon) !important;
-  color: white !important;
-}
-
 body {
   padding: 0;
   margin: 0;
