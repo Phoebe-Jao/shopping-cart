@@ -23,11 +23,11 @@ const Cart = () => {
               {
                 cartItems.map(item => (
                   <li key={item.id}>
-                    {item.name} x {item.quantity} = {item.price * item.quantity}
+                    {item.name} x {item.quantity} = PHP {(item.price * item.quantity).toFixed(2)}
                   </li>
               ))}
             </ul>
-            <p>{ totalPrice }</p>
+            <p>PHP { totalPrice.toFixed(2) }</p>
           </>
         )
       }

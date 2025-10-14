@@ -9,7 +9,7 @@ const products = [
     },
     name: "Waffle with Berries",
     category: "Waffle",
-    price: 6.50
+    price: 350.00
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
     },
     name: "Vanilla Bean Crème Brûlée",
     category: "Crème Brûlée",
-    price: 7.00
+    price: 449.00
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const products = [
     },
     name: "Macaron Mix of Five",
     category: "Macaron",
-    price: 8.00
+    price: 420.00
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const products = [
     },
     name: "Classic Tiramisu",
     category: "Tiramisu",
-    price: 5.50
+    price: 506.00
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const products = [
     },
     name: "Pistachio Baklava",
     category: "Baklava",
-    price: 4.00
+    price: 506.00
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const products = [
     },
     name: "Lemon Meringue Pie",
     category: "Pie",
-    price: 5.00
+    price: 460.00
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const products = [
     },
     name: "Red Velvet Cake",
     category: "Cake",
-    price: 4.50
+    price: 507.00
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ const products = [
     },
     name: "Salted Caramel Brownie",
     category: "Brownie",
-    price: 4.50
+    price: 400.00
   },
   {
     id: 9,
@@ -105,7 +105,7 @@ const products = [
     },
     name: "Vanilla Panna Cotta",
     category: "Panna Cotta",
-    price: 6.50
+    price: 612.00
   }
 ];
 
