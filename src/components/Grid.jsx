@@ -5,13 +5,10 @@ const Grid = () => {
   return (
     <div className="grid grid-cols-3 max-lg:grid-cols-2 gap-6 max-w-[96.2%]">
       {
-        products.map((product, i) => (
+        products.map(product => (
           <Product
-            image={product.image}
-            name={product.name}
-            category={product.category}
-            price={product.price}
-            key={i}
+            product={product}
+            key={product.id}
           />
       ))};
     </div>
