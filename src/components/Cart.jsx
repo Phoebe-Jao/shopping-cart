@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import emptyCart from '../assets/images/illustration-empty-cart.svg';
 import removeItemBtn from '../assets/images/icon-remove-item.svg';
 import carbonNeutralIcon from '../assets/images/icon-carbon-neutral.svg';
+import confirmedIcon from '../assets/images/icon-order-confirmed.svg';
 import { useCart } from '../context/CartContext';
 import Notice from './Notice';
+import Modal from './Modal';
+import Receipt from './Receipt';
 
 const Cart = () => {
+  const [open, setOpen] = useState(false);
   const { cartItems, cartCount, removeFromCart, getTotalPrice } = useCart();
 
   return (
@@ -44,6 +49,27 @@ const Cart = () => {
               altTxt={"This is a carbon-neutral delivery"}
               message={"This is a <strong>carbon-neutral</strong> delivery"}
             />
+            <button onClick={() => setOpen(true)} className="w-full bg-custom-maroon font-medium text-white rounded-small hover:rounded-4xl hover:bg-custom-rose-900 py-4 mt-4.5 cursor-pointer transition-all ease-out duration-500">
+              Confirm Order
+            </button>
+
+            <Modal 
+              open={open}
+              onClose={() => setOpen(false)}
+            >
+              <img src={confirmedIcon} alt="order confirmed" className='max-w-10 w-full pt-1 pb-3' />
+              <h1 className="text-2xl text-custom-rose-900 font-bold">Order Confirmed</h1>
+              <p className="text-[0.9rem] text-custom-rose-600 font-medium mb-5">We hope you enjoy your food!</p>
+              <ul>
+                {
+                cartItems.map(item => (
+                  <Receipt
+                    item={item}
+                  />
+              ))}
+              </ul>
+              
+            </Modal>
           </>
         )
       }
