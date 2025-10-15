@@ -65,10 +65,14 @@ const Cart = () => {
                 cartItems.map(item => (
                   <Receipt
                     item={item}
+                    key={item.id}
                   />
               ))}
               </ul>
-              
+              <div className="w-full flex justify-between items-center pt-2.5 pb-6">
+                <span className="text-[0.85rem] text-custom-maroon font-medium">Order Total</span>
+                <p className="text-2xl text-custom-maroon font-bold">PHP { getTotalPrice() }</p>
+              </div>
             </Modal>
           </>
         )
