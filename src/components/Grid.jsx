@@ -10,7 +10,7 @@ const Grid = () => {
             product={product}
             key={product.id}
           />
-      ))};
+      ))}
     </div>
   )
 }
