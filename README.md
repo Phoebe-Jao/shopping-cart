@@ -1,6 +1,6 @@
 # 📝 Shopping Cart – React + Tailwind CSS
 
-A simple and responsive shopping cart page built with **React.js** and **Tailwind CSS**. The original layout was provided by [Frontend Mentor](https://www.frontendmentor.io/), with some custom design adjustments.
+A single page shopping cart built with **React.js** and **Tailwind CSS**. AmaiCart is a fictional project inspired by existing digital learning institutions. It is made for practice/portfolio purposes only.
 
 ---
 
