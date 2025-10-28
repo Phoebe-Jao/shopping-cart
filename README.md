@@ -6,7 +6,9 @@ A single page shopping cart built with **React.js** and **Tailwind CSS**. AmaiCa
 
 ## 📸 Screenshot
 
+![Screenshot](https://i.imgur.com/YaCcPAi.jpeg)
 
+[Preview](https://amaicart-demo.netlify.app)
 
 ---
 
